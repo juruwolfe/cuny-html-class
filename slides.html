@@ -141,7 +141,7 @@
       <script type="text/template">
         #HTML & CSS
         
-        This is how the Ladies Learning Code site looks like with & without CSS!
+        This is how the CUNY Grad Journalism site looks like with & without CSS!
         
         ![](framework/img/workshop/cuny.png)
         ![](framework/img/workshop/cuny-no-css.png)
@@ -255,22 +255,12 @@
       <script type="text/template">
       #Setting up your project
 
-      Inside of the folder you downloaded today, open the **project** folder in your text editor to edit your project.
-
-      ```html
-      llc-html-css-one-page-master
-        |-- framework // Contains files needed for slide presentation. Do not edit!
-        |-- project // Contains the exercise files for this workshop. (images, CSS & HTML files)
-        |-- slides.html // This is the file you are viewing right now!
-      ```
       Open Sublime 
 
       Go to **File** > ** Open**. A popup will appear.
       
-      
       Then:
       
-      * navigate to the **html-master** folder
       * select **project**
       * click **Open**
       
@@ -464,7 +454,7 @@
 
         about <!-- .element: class="about" -->
 
-        loves <!-- .element: class="loves" -->
+        Favorites <!-- .element: class="favorites" -->
 
         footer <!-- .element: class="footer" -->
         </div>
@@ -508,7 +498,7 @@
           about content here
         </section>
 
-        <section class="loves">
+        <section class="favorites">
           stuff I love goes here
         </section>
 
@@ -655,7 +645,7 @@
           <span class="note">(**Reminder!** `<head>` and `<header>` are two different tags.)</span>
         1. In the **About** section, add a heading and 2 paragraphs.
           <span class="note">Don&#39;t have content to add? Use placeholder text! See resources below.</span>
-        1. In the **Loves** section, add a heading and a paragraph.
+        1. In the **Favorites** section, add a heading and a paragraph.
         1. In the **Footer**, add a heading.
         
         ---
@@ -677,13 +667,13 @@
         <html lang="en">
           <head>
             <meta charset="UTF-8">
-            <title>Laura Ipsum | Designer & Developer</title>
+            <title>Laura Ipsum | Journalist & Developer</title>
           </head>
           <body>
             <!-- page header -->
             <header>
               <h1>Hi! I'm Laura Ipsum.</h1>
-              <h2>I'm a digital designer and developer with a penchant for gourmet doughnuts.</h2>
+              <h2>I'm a multimedia journalist and developer with a penchant for gourmet doughnuts.</h2>
             </header>
 
             <!-- about me section -->
@@ -696,8 +686,8 @@
             </section>
 
             <!-- My favorite things section -->
-            <section class="loves">
-              <h1>Love, Love, Love</h1>
+            <section class="favorites">
+              <h1>Favorites</h1>
               <p>Here are a few things that I really love.</p>
             </section>
 
@@ -811,7 +801,7 @@
         #Exercise #4: Add links and images (15mins)
 
         1. Add a profile image.
-        1. Add three or four images to your "Loves" section.
+        1. Add three or four images to your "Favorites" section.
         1. Add an email link in the footer.
         1. Add the social links to the Footer/Contact section.  
           * use the sample images in the **project > images ** folder
@@ -1087,7 +1077,7 @@ text-transform: lowercase;</textarea>
           ```
           <head>
             <meta charset="UTF-8">
-            <title>Laura Ipsum | Designer & Developer</title>
+            <title>Laura Ipsum | Journalist & Developer</title>
             <link href='http://fonts.googleapis.com/css?family=Bad+Script|Open+Sans:400,300' rel='stylesheet' type='text/css'>
             <link rel="stylesheet" href="css/styles.css">
           </head>
@@ -1175,7 +1165,7 @@ text-transform: lowercase;</textarea>
         See below for more colour resources.
         * Pick a background image from the **project > images** folder or use one of the resources from [here](https://medium.com/@dustin/stock-photos-that-dont-suck-62ae4bcbe01b).
         * If using your own images, here are some suggested image sizes:
-          * profile image or the Loves section - 400px width x 400px height
+          * profile image or the Favorites section - 400px width x 400px height
           * background images - 1000-1400px width
           
         Try [Pixlr](https://pixlr.com/web), a free image editing app to crop images.
@@ -1204,7 +1194,7 @@ text-transform: lowercase;</textarea>
       <script type="text/template">
         # Class attributes
         
-        Remember adding a class attribute to the About & Loves section?  
+        Remember adding a class attribute to the About & Favorites section?  
         They were added to give each section *different* styles.
         
         ```xml
@@ -1212,7 +1202,7 @@ text-transform: lowercase;</textarea>
           ...
         </section>
         
-        <section class="loves">
+        <section class="favorites">
           ...
         </section>
         ```
@@ -1310,13 +1300,13 @@ text-transform: lowercase;</textarea>
       <script type="text/template">
         #Class Exercise #6 - Background colours
         
-        Next, apply a background colour to just the "Loves" section.  
+        Next, apply a background colour to just the "Favorites" section.  
         <span class="note">(The "About" section is getting a different treatment in a later exercise.)</span>
         
         ```
-        /* LOVES - things I love 
+        /* Favorites - things I love 
         -----------------------------------------*/
-        .loves {
+        .favorites {
           background: #9D6381;
         }
         ```
@@ -1570,9 +1560,9 @@ border: 15px solid green;</textarea>
       <script type="text/template">
         #Class Exercise #7 - Spacing
         
-        The final project also has the content in the "Loves" and footer section centered.  How can we target all the content in both of those sections at the same time?
+        The final project also has the content in the "Favorites" and footer section centered.  How can we target all the content in both of those sections at the same time?
         
-        <pre class="delayed"><code>.loves, 
+        <pre class="delayed"><code>.favorites, 
         footer {
           text-align: center;
         }
@@ -1659,7 +1649,7 @@ border: 15px solid green;</textarea>
         ```xml
         <header>
           <h1>Hi! I'm Laura Ipsum.</h1>
-          <h2>I'm a digital designer and developer with a penchant for gourmet doughnuts.</h2>
+          <h2>I'm a multimedia journalist and developer with a penchant for gourmet doughnuts.</h2>
         </header>
         ```
 
@@ -1684,7 +1674,7 @@ border: 15px solid green;</textarea>
           
         ```
         <h1>Hi! I'm <strong>Laura Ipsum</strong>.</h1>
-        <h2>I'm a digital <strong>designer</strong> and <strong>developer</strong> with a penchant for gourmet doughnuts.</h2>
+        <h2>I'm a multimedia <strong>journalist</strong> and <strong>developer</strong> with a penchant for gourmet doughnuts.</h2>
         ```
         Now it can also be used to add CSS. If you want this style to be available anytime the `<strong>` tag is used, then there's no need to use a descendant selector.
         
@@ -1939,7 +1929,7 @@ border: 15px solid green;</textarea>
       <script type="text/template">
         #Exercise #10: Style the images (20mins)
         
-        Take some time to style your About and Loves images. 
+        Take some time to style your About and Favorites images. 
         
         You can also use `width` or `height` on the images to make them all the same size and `margin`, `padding`, `border` to space and style the images.
         
