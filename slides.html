@@ -32,13 +32,13 @@
         
         <h2>Download<br> & Install</h2>
         <ol class="downloads">
-          <li>Learner files (zip file): <a href="https://github.com/ladieslearningcode/llc-html-css-one-page/archive/master.zip">http://bit.ly/llc-onepage</a>
+          <li>Project files: <a href="https://github.com/ladieslearningcode/llc-html-css-one-page/archive/master.zip">http://bit.ly/llc-onepage</a>
             <ul>
-              <li>unzip the learner file (<em>extract all</em> if you’re on a PC)</li>
+              <li>unzip the files (<em>extract all</em> if you’re on a PC)</li>
               <li>open <em>slides.html</em> in the browser to view the slides</li>
             </ul>
           </li>
-          <li>Atom Editor: <a href="http://atom.io">http://atom.io</a></li>
+          <li>Sublime: <a href="https://www.sublimetext.com/">https://www.sublimetext.com/</a></li>
           <li>Chrome Browser: <a href="https://www.google.ca/chrome/browser/desktop/">https://www.google.ca/chrome</a></li>
           </li>
         </ol>
@@ -51,23 +51,10 @@
     </section> 
     
     <section class="slide intro">
-      <img class="logo" src="framework/img/llc-logo-white.png" alt="Ladies Learning Code logo">
       <h1 class="heading-bg">
-        <span>Intro to HTML & CSS:<br>Building a one-page website</span>
+        <span>Intro to HTML & CSS</span>
       </h1>
       
-      <!-- FILL IN INSTRUCTOR DETAILS -->
-      <!-- <img class="instructor" src="http://placehold.it/225x225" alt="Instructor Name">
-      <h2><span class="cursive">with</span> Instructor name</h2>  
-      <ul>
-        <li><a href="mailto:">hello@email.com</a></li>
-        <li><a href="http://website.com">website.com</a></li>
-        <li><a href="http://twitter.com/">@twitter</a></li>
-      </ul> -->
-      
-      <div class="sponsor">
-        <p>In partnership with<br> <img src="framework/img/telus-logo-white.svg" alt="Telus"></p>
-      </div>
       <footer>
         <a class="left" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" src="framework/img/cc-by-nc.png" /></a>
         <p class="left">Content created by <a href="http://christinatruong.com">Christina Truong</a> for <a prefix="cc: http://creativecommons.org/ns#" href="http://ladieslearningcode.com" property="cc:attributionName" rel="cc:attributionURL">Ladies Learning Code</a></p>
@@ -77,7 +64,7 @@
     
     <section class="slide centered" data-markdown>
       <script type="text/template">
-        # Today&rsquo;s project
+        # Example project
 
         See the whole project [here](project/reference/final.html).
 
@@ -139,9 +126,9 @@
         * used to write and edit code
         * preinstalled editors (Notepad / TextEdit) don't include many features
         * paid and free options include features such as colour highlighting and plugins for improving workflow
-        * some great options: [Notepad++](http://notepad-plus-plus.org/), [Sublime Text](http://www.sublimetext.com/) (untimed free trial), [Brackets](http://brackets.io) and [TextWrangler](http://www.barebones.com/products/textwrangler/).
+        * some great options: [Notepad++](http://notepad-plus-plus.org/), [Atom](https://atom.io/), [Brackets](http://brackets.io) and [TextWrangler](http://www.barebones.com/products/textwrangler/).
 
-        **[Atom](https://atom.io/)** is totally free and is the editor we'll be using today.  
+        **[Sublime Text](http://www.sublimetext.com/) is the editor we'll be using today.  
         <span class="note">(If you have another editor installed, it will work as well but some features may be different.)</span>
         
         ---
@@ -156,8 +143,9 @@
         
         This is how the Ladies Learning Code site looks like with & without CSS!
         
-        ![](framework/img/workshop/llc-no-css.jpg)
-        ![](framework/img/workshop/llc-css.jpg)
+        ![](framework/img/workshop/cuny.png)
+        ![](framework/img/workshop/cuny-no-css.png)
+        
       </script>
     </section>
 
@@ -275,14 +263,14 @@
         |-- project // Contains the exercise files for this workshop. (images, CSS & HTML files)
         |-- slides.html // This is the file you are viewing right now!
       ```
+      Open Sublime 
 
-      Go to **File** > ** Add Project Folder**. A popup will appear.
+      Go to **File** > ** Open**. A popup will appear.
       
-      ![](framework/img/workshop/editor-add-project-1.jpg)
       
       Then:
       
-      * navigate to the **llc-html-css-one-page-master** folder
+      * navigate to the **html-master** folder
       * select **project**
       * click **Open**
       
@@ -310,35 +298,6 @@
     
     <section class="slide" data-markdown>
       <script type="text/template">
-        #Getting to know Atom
-        
-        Having a good text editor and learning how to use it to its full potential will help your work flow. Today, let's update the text wrapping option to make it easier to read long blocks of code and text.
-        
-        Go to **Preferences** to open the customization options.
-
-        ![](framework/img/workshop/atom-preferences.jpg)<!-- .element: width="70%" -->
-
-        The **Settings** tab will show by default. Scroll down to **Soft Wrap** option.
-
-        ![](framework/img/workshop/atom-settings.jpg)<!-- .element: width="70%" -->
-          
-        Make sure the **Soft Wrap** option is checked.
-        
-        ![](framework/img/workshop/atom-soft-wrap.jpg)<!-- .element: width="70%" -->
-        
-        ---
-        ###Resources
-        
-        *   [Atom documentation](https://atom.io/docs)
-        *   [Atom Shortcuts cheat sheet](https://bugsnag.com/blog/atom-editor-cheat-sheet)
-        *   [Customizing Atom](https://atom.io/docs/v0.61.0/customizing-atom)
-        *   [Themes](https://atom.io/themes) for Atom
-        *   [Snippets](https://github.com/atom/snippets) - create your own code snippet shortcuts
-      </script>
-    </section>
-    
-    <section class="slide" data-markdown>
-      <script type="text/template">
         #Class Exercise #1: Create your project's HTML page
         
         1. In the text editor, create a new file (**File** > **New File**)
@@ -346,11 +305,11 @@
         1. Add all of the basic HTML tags. Refer to [this slide](slides.html#basic-tags) for reference.
         1. In *between* the `<title></title>` tags, add a *page title* that reflects the content of your webpage. Example:
           ```
-          <title>Laura Ipsum | Digital Designer & Developer</title>
+          <title>Laura Ipsum | Multimedia Journalist & Developer</title>
           ```
         1. Open `index.html` in the browser. 
           * go to Windows Explorer or Finder
-          * navigate to the **llc-html-css-one-page-master > project** folder
+          * navigate to the **html-master > project** folder
           * double click on **index.html** to open it in your default browser
           <br><span class="note">(If Chrome is not your default, right-click/two-finger tap on **index.html** and choose **Open With > Chrome**)</span>
           
@@ -832,12 +791,12 @@
         Use the anchor tag, `<a>` to create the link. It also needs an `href` attribute to provide information for the location of the resource.
 
         ```xml
-        <a href="http://ladieslearningcode.com">Ladies Learning Code</a>
+        <a href="https://www.journalism.cuny.edu/">CUNY Graduate School of Journalism</a>
         ```
         
         To set the link to open in a new window, add a second attribute, `target`.
         ```xml
-        <a href="http://ladieslearningcode.com" target="_blank">Ladies Learning Code</a>
+        <a href="https://www.journalism.cuny.edu/" target="_blank">CUNY Graduate School of Journalism</a>
         ```
 
         Here's the syntax for an email link.
