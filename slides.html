@@ -1029,6 +1029,37 @@ text-transform: lowercase;</textarea>
   
       </script>
     </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Class Exercise: Using Google Fonts
+        
+        1. Go to [Google Fonts](http://www.google.com/fonts).
+        1. **Add to Collection** to select a font. 
+        ![](framework/img/workshop/google-fonts-1.jpg)
+        1. **Review** to compare. <span class="note">(The example project uses Open Sans and Bad Script.)</span>
+          ![](framework/img/workshop/google-fonts-2.jpg)
+        1. Select **Use** to get the code. <span class="note">(You can change your selections in the next exercise.)</span>
+        1. Select font weights. <span class="note">The more you choose, the more it will slow down page load time.</span>
+          * The project uses Open Sans Light 300, regular 400 and Bad Script normal 400.
+          * The default character set should contain what you need.
+        1. Copy the `<link>` code snippet and add it the `<head>` of your page, before your **styles.css**, to reference the Google Font CSS.
+          ```
+          <head>
+            <meta charset="UTF-8">
+            <title>Laura Ipsum | Journalist & Developer</title>
+            <link href='http://fonts.googleapis.com/css?family=Bad+Script|Open+Sans:400,300' rel='stylesheet' type='text/css'>
+            <link rel="stylesheet" href="css/styles.css">
+          </head>
+          ```
+        
+        Now you're ready to use the new fonts. Use the font-family name listed in the Google Fonts page.
+        
+        ```
+        font-family: sans-serif;
+        ```
+      </script>
+    </section>
     
     <section class="slide" data-markdown>
       <script type="text/template">
@@ -1067,7 +1098,7 @@ text-transform: lowercase;</textarea>
 
         ```
         body {
-          font-family: 'Open Sans', sans-serif;
+          font-family: sans-serif;
           font-weight: 300;
         }
         ```
@@ -1085,7 +1116,7 @@ text-transform: lowercase;</textarea>
         ```
         h1, 
         h2 {
-          font-family: 'Bad Script', cursive;
+          font-family: cursive;
         }
         ```
         Your page should now look like [exercise 5](project/reference/exercise-5.html) in the reference folder.
@@ -1094,13 +1125,12 @@ text-transform: lowercase;</textarea>
     
     <section class="slide small-type" data-markdown>
       <script type="text/template">
-        #Break time!
+        #Next Week!
 
         Optional exercises:
         
-        * Compare your code to [exercise-5.html](project/reference/exercise-5.html) in the reference folder.
-        * Pick two new fonts if you don't want to use the LLC selected fonts.
-        * Pick a color palette - the LLC project uses colours from [this palette](http://coolors.co/app/fdecef-cecccc-9d6381-612940-0f110c).   
+        * Pick two new fonts if you don't want to use the selected fonts.
+        * Pick a color palette - the project uses colours from [this palette](http://coolors.co/app/fdecef-cecccc-9d6381-612940-0f110c).   
         See below for more colour resources.
         * Pick a background image from the **project > images** folder or use one of the resources from [here](https://medium.com/@dustin/stock-photos-that-dont-suck-62ae4bcbe01b).
         * If using your own images, here are some suggested image sizes:
@@ -2004,7 +2034,7 @@ border: 15px solid green;</textarea>
         
         Or a quick online search almost always ends up with a solution like this tool right here: <http://hex.colorrrs.com>!
         
-        The LLC project uses <span style="background:#612940;padding:0 5px;color: white;">#612940</span> which coverts to `rgb(97,41,64)`.
+        The project uses <span style="background:#612940;padding:0 5px;color: white;">#612940</span> which coverts to `rgb(97,41,64)`.
       </script>
     </section>
     
@@ -2063,8 +2093,8 @@ border: 15px solid green;</textarea>
 
       You will need to register a domain name and purchase hosting. Here are some suggestions:
       
-      * [dreamhost.com](http://www.dreamhost.com/r.cgi?2085384) - domains and hosting - use promo code **LLC40** to get $40 off your registration!
-      * [hover.com](http://hover.com/ladiescode) - domains - save 10% with the promo code "learningcode"
+      * [dreamhost.com](http://www.dreamhost.com/r.cgi?2085384) - domains and hosting 
+      * [hover.com](http://hover.com/ladiescode) - domains 
 
       Why keep your domains and hosting separate?<!-- .element: class="note" --> [Learn more about Hover](http://ladieslearningcode.com/getting-hosted-domains-with-hover/).
 
