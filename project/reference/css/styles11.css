@@ -37,7 +37,7 @@ section,
 footer {
   padding: 100px 150px;
 }
-.loves, 
+.favorites, 
 footer {
   text-align: center;
 }
@@ -73,12 +73,12 @@ header h2 {
 }
 
 
-/* LOVES - things I love 
+/* favorites - things I love 
 -----------------------------------------*/
-.loves {
+.favorites {
   background: #9D6381;
 }
-.loves img {
+.favorites img {
   width: 250px;
   margin: 15px;
 }
