@@ -1433,54 +1433,6 @@ border: 1px solid green;</textarea>
       
       <pre class="delayed"><code style="background:transparent;border:none;font-weight:bold;font-size:40px;">¯\_(ツ)_/¯</code></pre>
     </section>
-        
-    <section class="slide">
-      <h1>Border Box Fix</h1>
-        <p>Luckily, there's a fix for this.  But first let's compare how it looks with and without the fix. Notice that the values are the same in both examples but one appears to be bigger than the other?</p>
-        
-        <div class="col-2">
-          <textarea class="snippet" data-subject="#example">background: lightblue;
-width: 450px;
-padding: 35px;
-border: 15px solid green;</textarea>
-          <div id="example" class="example" style="box-sizing: content-box;">
-            <p style="box-sizing: content-box;">This example does NOT have the border box fix.</p>
-          </div>
-        </div>    
-        
-        <div class="col-2">
-          <textarea class="snippet" data-subject="#example2">background: lightblue;
-width: 450px;
-padding: 35px;
-border: 15px solid green;</textarea>
-          <div id="example2" class="example">
-            <p>This example DOES have the border box fix.</p>
-          </div>
-        </div> 
-      </div>
-    </section> 
-    
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # * { Box-sizing: Border-box }
-        
-        Add this snippet to your project (and to all future projects) to fix how the width/padding/border size is rendered.
-        
-        ```
-        /* apply a natural box layout model to all elements, but allowing components to change */
-        html {
-          box-sizing: border-box;
-        }
-        *, *:before, *:after {
-          box-sizing: inherit;
-        }
-        ```
-        
-        Add it to the very top of your **styles.css** file.
-        
-        See more about The Box Model <!-- .element: class="note" --> [here](http://www.paulirish.com/2012/box-sizing-border-box-ftw/).
-      </script>
-    </section>
     
     <section class="slide" data-markdown>
       <script type="text/template">
