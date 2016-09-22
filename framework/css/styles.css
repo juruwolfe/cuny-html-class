@@ -865,6 +865,11 @@ code {
     background-size: cover;
 }
 
+.first-website.snacktwo {
+    background: url(../img/workshop/nom.gif) no-repeat 50%;
+    background-size: cover;
+}
+
 .css-gif {
     background: url(../img/workshop/css.gif) no-repeat 50%;
     background-size: contain;

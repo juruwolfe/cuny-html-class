@@ -1,0 +1,18 @@
+body {
+	background:lightgrey;
+	font-family:'Open Sans', sans-serif;
+	font-weight:300;
+	color:green;
+}
+
+header h1{
+	font-family:cursive;
+	color:blue;
+}
+
+
+h1{
+	color:red;
+}
+
+
